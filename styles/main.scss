@@ -6,3 +6,33 @@ $lightBlue: #3CA5BF;
 $textDkGray: #636363;
 $textLtGray: #AEAEAE;
 $backgroundGr: #F4F4F0;
+
+$font1: 'Lora';
+$font2: 'Oxygen';
+
+@mixin margin($t-margin, $r-margin, $b-margin, $l-margin) {margin-top: $t-margin; margin-right: $r-margin; margin-bottom: $b-margin; margin-left: $l-margin;}
+@mixin thingsFont($family, $serif, $size, $color, $weight) {font-family: $family, $serif; font-size: $size; color: $color; font-weight: $weight;}
+
+body {
+  font-size: 62.5%;
+}
+
+nav {
+  border-bottom: 1px $textLtGray solid;
+  -webkit-box-shadow: 0px 1px 1px $textLtGray;
+  -moz-box-shadow: 0px 1px 1px $textLtGray;
+  box-shadow: 0px 1px 1px $textLtGray;
+}
+
+.nav-left{
+  display: inline-block;
+
+}
+.nav-left .logo {
+  @include thingsFont($font1, serif, 3.3em, $logoOrange, 400);
+}
+
+.main {
+  background-color: $backgroundGr;
+  height: 100%;
+}
