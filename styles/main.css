@@ -16,14 +16,35 @@ nav {
   box-shadow: 0px 1px 1px #AEAEAE; }
 
 .nav-left {
-  display: inline-block; }
+  margin-left: 15%; }
 
 .nav-left .logo {
   font-family: "Lora", serif;
   font-size: 3.3em;
   color: #F15421;
+  font-weight: 400;
+  padding-right: 0;
+  margin-right: 0;
+  display: inline-block;
+  vertical-align: middle; }
+
+.nav-left button {
+  font-family: "Oxygen", serif;
+  font-size: 1.4em;
+  color: white;
   font-weight: 400; }
 
-.main {
-  background-color: #F4F4F0;
-  height: 100%; }
+.nav-left input {
+  height: 1.8em;
+  margin-right: -3px; }
+
+.nav-left .search {
+  background-color: #3CA5BF;
+  border: 1px solid #3CA5BF;
+  border-radius: 5px; }
+
+.nav-left .browse {
+  color: black;
+  background-color: white;
+  border: 1px solid #AEAEAE;
+  border-radius: 5px; }

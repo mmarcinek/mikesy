@@ -25,14 +25,37 @@ nav {
 }
 
 .nav-left{
-  display: inline-block;
+  margin-left: 15%;
 
-}
-.nav-left .logo {
-  @include thingsFont($font1, serif, 3.3em, $logoOrange, 400);
+  .logo {
+    @include thingsFont($font1, serif, 3.3em, $logoOrange, 400);
+    padding-right: 0;
+    margin-right: 0;
+    display: inline-block;
+    vertical-align: middle;
+
+  }
+
+  button {
+   @include thingsFont($font2, serif, 1.4em, white, 400);
+  }
+
+  input {
+    height: 1.8em;
+    margin-right: -3px;
+  }
+
+  .search {
+    background-color: $lightBlue;
+    border: 1px solid $lightBlue;
+    border-radius: 5px;
+  }
+
+  .browse {
+    color: black;
+    background-color: white;
+    border: 1px solid $textLtGray;
+    border-radius: 5px;
+  }
 }
 
-.main {
-  background-color: $backgroundGr;
-  height: 100%;
-}
