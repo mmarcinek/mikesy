@@ -115,8 +115,7 @@ aside {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 23.23176%;
-  float: left; }
+  width: 23.23176%; }
 
 aside:last-child {
   margin-right: 0; }
@@ -125,8 +124,7 @@ section {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 74.41059%;
-  float: right; }
+  width: 74.41059%; }
 
 section:last-child {
   margin-right: 0; }
@@ -135,10 +133,7 @@ section ul {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 23.23176%;
-  height: 245px;
-  width: 240px;
-  border: 1px solid black; }
+  width: 23.23176%; }
 
 section ul:last-child {
   margin-right: 0; }

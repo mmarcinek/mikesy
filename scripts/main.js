@@ -11,12 +11,6 @@ cameras.forEach( function (item){
 
 $('#listing').append(item);
 
-})
-
-
-
-
-
-
+});
 
 });

@@ -143,19 +143,15 @@ nav {
 
 aside {
   @include span-columns(3);
-  float: left;
 
 }
 
 section {
   @include span-columns(9);
-  float: right;
 
   ul {
     @include span-columns(3);
-    height: 245px;
-    width: 240px;
-    border: 1px solid black;
+
   }
 }
 
