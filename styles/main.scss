@@ -134,9 +134,33 @@ nav {
 }
 
 .main {
-$visual-grid: true !default;
-
+  float: clear;
+  // @include outer-container;
+  width: 100%;
+  margin: 0;
+  background-color: $backgroundGr;
 }
+
+aside {
+  @include span-columns(3);
+  float: left;
+}
+
+section {
+  @include span-columns(9);
+  float: right;
+
+  figure {
+    @include span-columns(3);
+    height: 245px;
+    width: 240px;
+    border: 1px solid black;
+  }
+}
+
+
+
+
 
 
 

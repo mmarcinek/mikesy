@@ -104,3 +104,41 @@ nav {
   color: #636363;
   font-size: 0.8em;
   padding-left: 3px; }
+
+.main {
+  float: clear;
+  width: 100%;
+  margin: 0;
+  background-color: #F4F4F0; }
+
+aside {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 23.23176%;
+  float: left; }
+
+aside:last-child {
+  margin-right: 0; }
+
+section {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 74.41059%;
+  float: right; }
+
+section:last-child {
+  margin-right: 0; }
+
+section figure {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 23.23176%;
+  height: 245px;
+  width: 240px;
+  border: 1px solid black; }
+
+section figure:last-child {
+  margin-right: 0; }
