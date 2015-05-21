@@ -3,8 +3,9 @@
 
 $logoOrange: #F15421;
 $lightBlue: #3CA5BF;
+$lightBlueHover: #BDE6F0;
 $textDkGray: #636363;
-$textLtGray: #AEAEAE;
+$textLtGray: #EEEEEE;
 $backgroundGr: #F4F4F0;
 
 $font1: 'Lora';
@@ -18,18 +19,20 @@ body {
 }
 
 nav {
+  height: 78px;
   border-bottom: 1px $textLtGray solid;
   -webkit-box-shadow: 0px 1px 1px $textLtGray;
   -moz-box-shadow: 0px 1px 1px $textLtGray;
-  box-shadow: 0px 1px 1px $textLtGray;
+  box-shadow: 0px 1px 1px $textDkGray;
 }
 
 .nav-left{
+  margin-top: -11px;
   margin-left: 15%;
   display: inline-block;
 
   .logo {
-    @include thingsFont($font1, serif, 3.3em, $logoOrange, 400);
+    @include thingsFont($font1, serif, 3.5em, $logoOrange, 400);
     padding-right: 0;
     margin-right: 15px;
     display: inline-block;
@@ -39,32 +42,50 @@ nav {
 
   button {
    @include thingsFont($font2, serif, 1.4em, white, 400);
+   padding: 7px 15px;
   }
 
   input {
-    height: 1.83em;
+    background-color: #FBFBFA;
+    height: 2.8em;
+    width: 230px;
     margin-right: -3px;
     vertical-align: 1px;
+    border-radius: 3px 0 0 3px;
   }
 
   .search {
     background-color: $lightBlue;
     border: 1px solid $lightBlue;
-    border-radius: 0 5px 5px 0;
+    border-radius: 0 3px 3px 0;
+  }
+
+  .search:hover {
+    background-color: $lightBlueHover;
   }
 
   .browse {
     color: $textDkGray;
     background-color: white;
     border: 1px solid $textLtGray;
-    border-radius: 5px;
+    border-radius: 3px;
+    margin-left: 15px;
+
+    // span {
+    //   width: 0;
+    //   height: 0;
+    //   border-style: solid;
+    //   border-width: 6px 4px 0 4px;
+    //   border-color: $textDkGray transparent transparent transparent;
+    // }
   }
+
 }
 
 .nav-right {
   @include thingsFont($font2, serif, 1.4em, $lightBlue, 400);
-  margin-top: 10px;
-  margin-right: 15%;
+  margin-top: 5px;
+  margin-right: 13%;
   display: inline-block;
   float: right;
 
@@ -83,16 +104,21 @@ nav {
   button {
     background-color: white;
     border: 1px solid $lightBlue;
-    border-radius: 5px;
+    border-radius: 3px;
     display: inline-block;
+    padding: 7px 10px;
+  }
+
+  button:hover {
+    background-color: $lightBlueHover;
   }
 
   figure {
     border-left: 1px solid $textLtGray;
     display: inline-block;
-    padding-left: 20px;
+    padding-left: 13px;
     vertical-align: -11px;
-    margin-left: 20px;
+    margin-left: 13px;
 
 
     img {
@@ -105,6 +131,10 @@ nav {
       padding-left: 3px;
     }
   }
+}
+
+.main {
+$visual-grid: true !default;
 
 }
 

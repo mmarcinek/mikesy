@@ -10,18 +10,20 @@ body {
   font-size: 62.5%; }
 
 nav {
-  border-bottom: 1px #AEAEAE solid;
-  -webkit-box-shadow: 0px 1px 1px #AEAEAE;
-  -moz-box-shadow: 0px 1px 1px #AEAEAE;
-  box-shadow: 0px 1px 1px #AEAEAE; }
+  height: 78px;
+  border-bottom: 1px #EEEEEE solid;
+  -webkit-box-shadow: 0px 1px 1px #EEEEEE;
+  -moz-box-shadow: 0px 1px 1px #EEEEEE;
+  box-shadow: 0px 1px 1px #636363; }
 
 .nav-left {
+  margin-top: -11px;
   margin-left: 15%;
   display: inline-block; }
 
 .nav-left .logo {
   font-family: "Lora", serif;
-  font-size: 3.3em;
+  font-size: 3.5em;
   color: #F15421;
   font-weight: 400;
   padding-right: 0;
@@ -33,31 +35,39 @@ nav {
   font-family: "Oxygen", serif;
   font-size: 1.4em;
   color: white;
-  font-weight: 400; }
+  font-weight: 400;
+  padding: 7px 15px; }
 
 .nav-left input {
-  height: 1.83em;
+  background-color: #FBFBFA;
+  height: 2.8em;
+  width: 230px;
   margin-right: -3px;
-  vertical-align: 1px; }
+  vertical-align: 1px;
+  border-radius: 3px 0 0 3px; }
 
 .nav-left .search {
   background-color: #3CA5BF;
   border: 1px solid #3CA5BF;
-  border-radius: 0 5px 5px 0; }
+  border-radius: 0 3px 3px 0; }
+
+.nav-left .search:hover {
+  background-color: #BDE6F0; }
 
 .nav-left .browse {
   color: #636363;
   background-color: white;
-  border: 1px solid #AEAEAE;
-  border-radius: 5px; }
+  border: 1px solid #EEEEEE;
+  border-radius: 3px;
+  margin-left: 15px; }
 
 .nav-right {
   font-family: "Oxygen", serif;
   font-size: 1.4em;
   color: #3CA5BF;
   font-weight: 400;
-  margin-top: 10px;
-  margin-right: 15%;
+  margin-top: 5px;
+  margin-right: 13%;
   display: inline-block;
   float: right; }
 
@@ -73,15 +83,19 @@ nav {
 .nav-right button {
   background-color: white;
   border: 1px solid #3CA5BF;
-  border-radius: 5px;
-  display: inline-block; }
+  border-radius: 3px;
+  display: inline-block;
+  padding: 7px 10px; }
+
+.nav-right button:hover {
+  background-color: #BDE6F0; }
 
 .nav-right figure {
-  border-left: 1px solid #AEAEAE;
+  border-left: 1px solid #EEEEEE;
   display: inline-block;
-  padding-left: 20px;
+  padding-left: 13px;
   vertical-align: -11px;
-  margin-left: 20px; }
+  margin-left: 13px; }
 
 .nav-right figure img {
   width: 23px; }
