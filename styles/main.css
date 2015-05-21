@@ -132,19 +132,50 @@ section {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 74.41059%; }
+  width: 74.41059%;
+  margin-top: 44px; }
 
 section:last-child {
   margin-right: 0; }
 
-section ul li {
+section .listing {
+  font-family: "Oxygen", serif;
+  font-size: 1.3em;
+  color: #636363;
+  font-weight: 400; }
+
+section .listing li {
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 23.23176%;
+  border: 1px solid #EEEEEE;
   list-style-type: none;
-  white-space: nowrap;
-  overflow: ellipsis; }
+  margin-top: 20px; }
 
-section ul li:last-child {
+section .listing li:last-child {
   margin-right: 0; }
+
+section .listing img {
+  width: 100%; }
+
+section .listing .title {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  margin-bottom: 0;
+  padding-left: 5px; }
+
+section .listing .seller {
+  display: inline-block;
+  float: left;
+  color: #B2B2B0;
+  margin-top: 5px;
+  padding-left: 5px; }
+
+section .listing .price {
+  display: inline-block;
+  color: #73BD4B;
+  float: right;
+  margin-top: 5px;
+  padding-right: 7px; }
