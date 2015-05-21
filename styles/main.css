@@ -16,7 +16,8 @@ nav {
   box-shadow: 0px 1px 1px #AEAEAE; }
 
 .nav-left {
-  margin-left: 15%; }
+  margin-left: 15%;
+  display: inline-block; }
 
 .nav-left .logo {
   font-family: "Lora", serif;
@@ -44,7 +45,45 @@ nav {
   border-radius: 5px; }
 
 .nav-left .browse {
-  color: black;
+  color: #636363;
   background-color: white;
   border: 1px solid #AEAEAE;
   border-radius: 5px; }
+
+.nav-right {
+  font-family: "Oxygen", serif;
+  font-size: 1.4em;
+  color: #3CA5BF;
+  font-weight: 400;
+  margin-top: 10px;
+  margin-right: 15%;
+  display: inline-block;
+  float: right; }
+
+.nav-right a {
+  text-decoration: none;
+  color: #3CA5BF;
+  display: inline-block; }
+
+.nav-right a:hover {
+  text-decoration: underline; }
+
+.nav-right button {
+  background-color: white;
+  border: 1px solid #3CA5BF;
+  border-radius: 5px;
+  display: inline-block; }
+
+.nav-right figure {
+  border-left: 1px solid #AEAEAE;
+  display: inline-block;
+  padding-left: 20px;
+  vertical-align: -11px; }
+
+.nav-right figure img {
+  width: 23px; }
+
+.nav-right figure figcaption {
+  color: #636363;
+  font-size: 0.8em;
+  padding-left: 3px; }
