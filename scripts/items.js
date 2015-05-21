@@ -1,5 +1,5 @@
 // ITEM 1
-
+var cameras = [
 {
 "listing_id": 206416477,
 "state": "active",
@@ -971,3 +971,4 @@
 "combed cotton",
 "ring spun"
 ],
+}];
