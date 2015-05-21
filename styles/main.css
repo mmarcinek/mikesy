@@ -61,6 +61,14 @@ nav {
   border-radius: 3px;
   margin-left: 15px; }
 
+.nav-left .browse span {
+  content: '';
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 6px 4px 0 4px;
+  border-color: #636363 transparent transparent transparent; }
+
 .nav-right {
   font-family: "Oxygen", serif;
   font-size: 1.4em;
@@ -129,11 +137,14 @@ section {
 section:last-child {
   margin-right: 0; }
 
-section ul {
+section ul li {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 23.23176%; }
+  width: 23.23176%;
+  list-style-type: none;
+  white-space: nowrap;
+  overflow: ellipsis; }
 
-section ul:last-child {
+section ul li:last-child {
   margin-right: 0; }

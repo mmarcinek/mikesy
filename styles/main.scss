@@ -71,13 +71,14 @@ nav {
     border-radius: 3px;
     margin-left: 15px;
 
-    // span {
-    //   width: 0;
-    //   height: 0;
-    //   border-style: solid;
-    //   border-width: 6px 4px 0 4px;
-    //   border-color: $textDkGray transparent transparent transparent;
-    // }
+    span {
+      content: '';
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 6px 4px 0 4px;
+      border-color: $textDkGray transparent transparent transparent;
+    }
   }
 
 }
@@ -150,8 +151,14 @@ section {
   @include span-columns(9);
 
   ul {
-    @include span-columns(3);
 
+
+    li {
+      @include span-columns(3);
+      list-style-type: none;
+      white-space: nowrap;
+      overflow: ellipsis;
+    }
   }
 }
 
