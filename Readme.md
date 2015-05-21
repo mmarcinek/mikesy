@@ -1,1 +1,4 @@
-## I am a Readme.... you should probably update me!
+## This is a rendition of an Etsy page that utilizes:
+
+## SASS- with Bourbon Neat
+## jQuery
