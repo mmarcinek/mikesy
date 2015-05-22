@@ -118,7 +118,8 @@ nav {
 section {
   float: clear;
   width: 100%;
-  margin: 0; }
+  margin: 0;
+  margin-left: 35px; }
 
 section aside {
   float: left;

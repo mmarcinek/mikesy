@@ -141,6 +141,7 @@ section {
   float: clear;
   width: 100%;
   margin: 0;
+  margin-left: 35px;
 
   aside {
     @include span-columns(3);
