@@ -7,14 +7,16 @@ html {
   box-sizing: inherit; }
 
 body {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  background-color: #F4F4F0; }
 
 nav {
   height: 78px;
   border-bottom: 1px #EEEEEE solid;
   -webkit-box-shadow: 0px 1px 1px #EEEEEE;
   -moz-box-shadow: 0px 1px 1px #EEEEEE;
-  box-shadow: 0px 1px 1px #636363; }
+  box-shadow: 0px 1px 1px #636363;
+  background-color: white; }
 
 .nav-left {
   margin-top: -11px;
@@ -113,67 +115,86 @@ nav {
   font-size: 0.8em;
   padding-left: 3px; }
 
-.main {
+section {
   float: clear;
   width: 100%;
-  margin: 0;
-  background-color: #F4F4F0; }
+  margin: 0; }
 
-aside {
+section aside {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 23.23176%; }
-
-aside:last-child {
+  width: 23.23176%;
+  margin-top: 66px;
+  margin-left: 33px;
   margin-right: 0; }
 
-section {
+section aside:last-child {
+  margin-right: 0; }
+
+section aside ul {
+  background-color: white; }
+
+section aside ul li {
+  list-style-type: none; }
+
+section aside ul li a {
+  font-family: "Oxygen", serif;
+  font-size: 1.3em;
+  color: #3CA5BF;
+  font-weight: 400;
+  text-decoration: none; }
+
+section article {
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 74.41059%;
   margin-top: 44px; }
 
-section:last-child {
+section article:last-child {
   margin-right: 0; }
 
-section .listing {
+section article .listing {
   font-family: "Oxygen", serif;
   font-size: 1.3em;
   color: #636363;
   font-weight: 400; }
 
-section .listing li {
+section article .listing li {
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 23.23176%;
+  background-color: white;
   border: 1px solid #EEEEEE;
-  list-style-type: none;
-  margin-top: 20px; }
+  border-radius: 3px;
+  margin-top: 20px;
+  box-shadow: 2px 2px 2px #EEEEEE; }
 
-section .listing li:last-child {
+section article .listing li:last-child {
   margin-right: 0; }
 
-section .listing img {
-  width: 100%; }
+section article .listing img {
+  width: 100%;
+  overflow: hidden; }
 
-section .listing .title {
+section article .listing .title {
   white-space: nowrap;
   text-overflow: ellipsis;
+  list-style-type: none;
   overflow: hidden;
   margin-bottom: 0;
   padding-left: 5px; }
 
-section .listing .seller {
+section article .listing .seller {
   display: inline-block;
   float: left;
   color: #B2B2B0;
   margin-top: 5px;
   padding-left: 5px; }
 
-section .listing .price {
+section article .listing .price {
   display: inline-block;
   color: #73BD4B;
   float: right;

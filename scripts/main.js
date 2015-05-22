@@ -13,4 +13,15 @@ $('.listing').append(itemPost);
 
 });
 
+
+
+var categoryListing;
+
+stuff.results.forEach ( function (list){
+    categoryListing = '<li><a href="#">' + list.taxonomy_path + '</a></li>';
+
+$('.sidebar').append(categoryListing).sort();
+
+});
+
 });

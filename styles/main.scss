@@ -16,6 +16,8 @@ $font2: 'Oxygen';
 
 body {
   font-size: 62.5%;
+  background-color: $backgroundGr;
+
 }
 
 nav {
@@ -24,6 +26,7 @@ nav {
   -webkit-box-shadow: 0px 1px 1px $textLtGray;
   -moz-box-shadow: 0px 1px 1px $textLtGray;
   box-shadow: 0px 1px 1px $textDkGray;
+  background-color: white;
 }
 
 .nav-left{
@@ -134,66 +137,84 @@ nav {
   }
 }
 
-.main {
+section {
   float: clear;
-  // @include outer-container;
   width: 100%;
   margin: 0;
-  background-color: $backgroundGr;
-}
 
-aside {
-  @include span-columns(3);
+  aside {
+    @include span-columns(3);
+    margin-top: 66px;
+    margin-left: 33px;
+    margin-right: 0;
 
-}
+    ul {
+      background-color: white;
 
-section {
-  @include span-columns(9);
-  margin-top: 44px;
+      li {
+        list-style-type: none;
 
-
-  .listing {
-    @include thingsFont($font2, serif, 1.3em, $textDkGray, 400);
-
-    li {
-      @include span-columns(3);
-      border: 1px solid $textLtGray;
-      list-style-type: none;
-      margin-top: 20px;
+        a {
+          @include thingsFont($font2, serif, 1.3em, $lightBlue, 400);
+          text-decoration: none;
+        }
+      }
     }
 
-    img {
-      // width: 226px;
-      width: 100%;
-    }
+  }
 
-    .title {
-      white-space: nowrap;
-      text-overflow: ellipsis;
-      overflow: hidden;
-      margin-bottom: 0;
-      padding-left: 5px;
-    }
+  article {
+    @include span-columns(9);
+    margin-top: 44px;
 
-    .seller {
-      display: inline-block;
-      float: left;
-      color: #B2B2B0;
-      margin-top: 5px;
-      padding-left: 5px;
 
-    }
+    .listing {
+      @include thingsFont($font2, serif, 1.3em, $textDkGray, 400);
 
-    .price {
-      display: inline-block;
-      color: #73BD4B;
-      float: right;
-      margin-top: 5px;
-      padding-right: 7px;
+      li {
+        @include span-columns(3);
+        background-color: white;
+        border: 1px solid $textLtGray;
+        border-radius: 3px;
+        margin-top: 20px;
+        box-shadow: 2px 2px 2px $textLtGray;
+      }
 
+      img {
+        width: 100%;
+        overflow: hidden;
+      }
+
+      .title {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        list-style-type: none;
+        overflow: hidden;
+        margin-bottom: 0;
+        padding-left: 5px;
+      }
+
+      .seller {
+        display: inline-block;
+        float: left;
+        color: #B2B2B0;
+        margin-top: 5px;
+        padding-left: 5px;
+
+      }
+
+      .price {
+        display: inline-block;
+        color: #73BD4B;
+        float: right;
+        margin-top: 5px;
+        padding-right: 7px;
+
+      }
     }
   }
 }
+
 
 
 
