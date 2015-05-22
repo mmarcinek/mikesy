@@ -176,6 +176,9 @@ section article .listing li {
 section article .listing li:last-child {
   margin-right: 0; }
 
+section article .listing li:last-child {
+  margin-right: 1px; }
+
 section article .listing img {
   width: 100%;
   overflow: hidden; }

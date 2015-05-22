@@ -1,5 +1,3 @@
-$(document).ready( function () {
-
 var itemImage, itemTitle, itemSeller, itemPrice, itemPost;
 
 stuff.results.forEach( function (item){
@@ -13,30 +11,30 @@ $('.listing').append(itemPost);
 
 });
 
+var sidebar = stuff.results.map (function (item){
 
-
-var categoryListing;
-
-stuff.results.forEach ( function (list){
-
-categoryListing = '<li><a href="#">' + list.taxonomy_path + '</a></li>';
-
-// $('.sidebar').append(categoryListing);
-
-$('.sidebar').sort(function (categoryListing) {
-   if(a.categoryListing == b.categoryListing){
-    return a.categoryListing;} else {
-    return a.categoryListing && b.categoryListing;}
-   }).append(categoryListing);
-
-
+  if (item.taxonomy_path !== null)
+    return item.taxonomy_path;
+  else
+    return [];
 });
 
+var sidebarItems = [];
+
+  sidebar.forEach (function(lists){
+  lists.forEach(function (x){
+    if(sidebarItems.indexOf(x) === -1)
+      sidebarItems.push(x);
+  });
 });
 
-// sort( function (x,y) {
-//    var x = results[0].taxonomy_path[0];
-//    var y = results[1].taxonomy_path[1];
-//    if(x === y) {
-//     return x;} else {
-//     return x && y;} });
+
+var category = $('.sidebar');
+
+sidebarItems.forEach ( function (sbItem){
+  category.append('<li><a href="#">' + sbItem + '</a></li>');
+});
+
+
+
+
