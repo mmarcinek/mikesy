@@ -94,14 +94,20 @@ nav {
     border: 1px solid $textLtGray;
     border-radius: 3px;
     margin-left: 15px;
+    padding-left: 6px;
+    padding-right: 9px;
 
     span {
-      content: '';
-      width: 0;
-      height: 0;
-      border-style: solid;
-      border-width: 6px 4px 0 4px;
-      border-color: $textDkGray transparent transparent transparent;
+      color: #bbb;
+      font-size: 8px;
+      margin: 0 2px;
+
+      // content: '';
+      // width: 0;
+      // height: 0;
+      // border-style: solid;
+      // border-width: 6px 4px 0 4px;
+      // border-color: $textDkGray transparent transparent transparent;
     }
   }
 
@@ -184,6 +190,8 @@ section {
 
     ul {
       background-color: white;
+      border-radius: 3px;
+      box-shadow: 2px 2px 2px $textLtGray;
 
       .ul-heading {
           @include thingsFont($font3, serif, 1.4em, #5A5555, 600);
@@ -219,8 +227,6 @@ section {
       li {
         display: inline-block;
         list-style-type: none;
-
-
       }
 
       li.left {
@@ -259,6 +265,7 @@ section {
         border-radius: 3px;
         box-shadow: 2px 2px 2px $textLtGray;
         position: relative;
+        margin-bottom: 18px;
 
         &:last-child{
           margin-right: 1px;
@@ -266,7 +273,7 @@ section {
       }
 
       li:hover {
-
+        box-shadow: 1px 1px 1px #CCC;
       }
 
       img {

@@ -77,15 +77,14 @@ nav {
   background-color: white;
   border: 1px solid #EEEEEE;
   border-radius: 3px;
-  margin-left: 15px; }
+  margin-left: 15px;
+  padding-left: 6px;
+  padding-right: 9px; }
 
 .nav-left .browse span {
-  content: '';
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 6px 4px 0 4px;
-  border-color: #636363 transparent transparent transparent; }
+  color: #bbb;
+  font-size: 8px;
+  margin: 0 2px; }
 
 /* ==================
        Nav Right
@@ -160,7 +159,9 @@ section aside:last-child {
   margin-right: 0; }
 
 section aside ul {
-  background-color: white; }
+  background-color: white;
+  border-radius: 3px;
+  box-shadow: 2px 2px 2px #EEEEEE; }
 
 section aside ul .ul-heading {
   font-family: "Open Sans", serif;
@@ -238,13 +239,17 @@ section article .listing li {
   border: 1px solid #EEEEEE;
   border-radius: 3px;
   box-shadow: 2px 2px 2px #EEEEEE;
-  position: relative; }
+  position: relative;
+  margin-bottom: 18px; }
 
 section article .listing li:last-child {
   margin-right: 0; }
 
 section article .listing li:last-child {
   margin-right: 1px; }
+
+section article .listing li:hover {
+  box-shadow: 1px 1px 1px #CCC; }
 
 section article .listing img {
   width: 100%;

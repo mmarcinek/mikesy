@@ -1,5 +1,4 @@
 var itemImage, itemTitle, itemSeller, itemPrice, itemPost;
-// var itemUrl = stuff.results.url;
 
 stuff.results.forEach( function (item){
     itemImage = '<a href="' + item.url + '"><img src="' + item.Images[0].url_170x135 + '"></a>';
