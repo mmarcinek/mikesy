@@ -166,7 +166,7 @@ section {
   float: clear;
   width: 100%;
   margin: 0;
-  margin-left: 35px;
+  margin-left: 5%;
 
   h5 {
     @include thingsFont($font3, sans-serif, 1.4em, #5A5555, 600);
@@ -195,11 +195,15 @@ section {
 
       li {
         list-style-type: none;
+        padding-bottom: 4px;
 
         a {
           @include thingsFont($font3, serif, 1.3em, $lightBlue, 400);
         }
 
+        a:last-child {
+          padding-bottom: 9px;
+        }
       }
     }
 

@@ -1,9 +1,10 @@
 var itemImage, itemTitle, itemSeller, itemPrice, itemPost;
+// var itemUrl = stuff.results.url;
 
 stuff.results.forEach( function (item){
-    itemImage = '<a href="#"><img src="' + item.Images[0].url_170x135 + '"></a>';
-    itemTitle = '<p class="title"><a href="#">' + item.title + '</a></p>';
-    itemSeller ='<p class="seller"><a href="#">' + item.Shop.shop_name + '</a></p>';
+    itemImage = '<a href="' + item.url + '"><img src="' + item.Images[0].url_170x135 + '"></a>';
+    itemTitle = '<p class="title"><a href="' + item.url + '">' + item.title + '</a></p>';
+    itemSeller ='<p class="seller"><a href="' + item.Shop.url + '">' + item.Shop.shop_name + '</a></p>';
     itemPrice ='<p class="price">' + '$' + item.price + ' ' + 'USD' + '</p>';
     itemPost = '<li>' + itemImage + itemTitle + itemSeller + itemPrice + '</li>';
 

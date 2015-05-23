@@ -137,7 +137,7 @@ section {
   float: clear;
   width: 100%;
   margin: 0;
-  margin-left: 35px; }
+  margin-left: 5%; }
 
 section h5 {
   font-family: "Open Sans", sans-serif;
@@ -172,13 +172,17 @@ section aside ul .ul-heading {
   margin-bottom: 20px; }
 
 section aside ul li {
-  list-style-type: none; }
+  list-style-type: none;
+  padding-bottom: 4px; }
 
 section aside ul li a {
   font-family: "Open Sans", serif;
   font-size: 1.3em;
   color: #3CA5BF;
   font-weight: 400; }
+
+section aside ul li a:last-child {
+  padding-bottom: 9px; }
 
 section article {
   float: left;
