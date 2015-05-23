@@ -10,6 +10,7 @@ $backgroundGr: #F4F4F0;
 
 $font1: 'Lora';
 $font2: 'Oxygen';
+$font3: 'Open Sans';
 
 @mixin margin($t-margin, $r-margin, $b-margin, $l-margin) {margin-top: $t-margin; margin-right: $r-margin; margin-bottom: $b-margin; margin-left: $l-margin;}
 @mixin thingsFont($family, $serif, $size, $color, $weight) {font-family: $family, $serif; font-size: $size; color: $color; font-weight: $weight;}
@@ -21,7 +22,15 @@ $font2: 'Oxygen';
 body {
   font-size: 62.5%;
   background-color: $backgroundGr;
+  box-sizing: border-box;
+}
 
+a{
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 /* =================
@@ -110,16 +119,12 @@ nav {
   float: right;
 
   a {
-    text-decoration: none;
     color: $lightBlue;
     display: inline-block;
     margin-right: 14px;
   }
 
-  a:hover {
-    text-decoration: underline;
 
-  }
 
   button {
     background-color: white;
@@ -163,27 +168,36 @@ section {
   margin: 0;
   margin-left: 35px;
 
+  h5 {
+    @include thingsFont($font3, sans-serif, 1.4em, #5A5555, 600);
+    margin-bottom: 10px;
+  }
+
 
   aside { //Side Bar Category list style
     @include span-columns(3);
-    margin-top: 66px;
+    margin-top: 32px;
     margin-left: 33px;
     margin-right: 0;
     padding-left: 70px;
 
+
     ul {
       background-color: white;
+
+      .ul-heading {
+          @include thingsFont($font3, serif, 1.4em, #5A5555, 600);
+          margin-top: 20px;
+          margin-left: -25px;
+          margin-bottom: 20px;
+
+      }
 
       li {
         list-style-type: none;
 
         a {
-          @include thingsFont($font2, serif, 1.3em, $lightBlue, 400);
-          text-decoration: none;
-        }
-
-        a:hover {
-          text-decoration: underline;
+          @include thingsFont($font3, serif, 1.3em, $lightBlue, 400);
         }
 
       }
@@ -195,6 +209,42 @@ section {
     @include span-columns(9);
     margin-top: 44px;
 
+    ul {
+      margin-bottom: 0;
+
+      li {
+        display: inline-block;
+        list-style-type: none;
+
+
+      }
+
+      li.left {
+        display: inline-block;
+
+        a {
+        display: inline;
+        @include thingsFont($font3, serif, 1.4em, $lightBlue, 600);
+        }
+
+        h5 {
+        display: inline;
+        @include thingsFont($font3, serif, 1.4em, #5A5555, 600);
+        }
+
+      }
+
+      .right {
+        display: inline-block;
+        margin-left: 44%;
+        @include thingsFont($font3, serif, 1.4em, #5A5555, 600);
+
+         a {
+          color: $lightBlue;
+        }
+      }
+
+    }
 
     .listing {
 
@@ -203,8 +253,8 @@ section {
         background-color: white;
         border: 1px solid $textLtGray;
         border-radius: 3px;
-        margin-top: 20px;
         box-shadow: 2px 2px 2px $textLtGray;
+        position: relative;
 
         &:last-child{
           margin-right: 1px;
@@ -221,13 +271,9 @@ section {
       }
 
       p a {
-        @include thingsFont($font2, serif, 1.25em, $textDkGray, 400);
-        text-decoration: none;
+        @include thingsFont($font3, serif, 1.25em, $textDkGray, 400);
 
-      }
 
-      p a:hover {
-        text-decoration: underline;
       }
 
       .title {
@@ -253,7 +299,7 @@ section {
       }
 
       .price {
-        @include thingsFont($font2, serif, 1.25em, #73BD4B, 400);
+        @include thingsFont($font3, serif, 1.25em, #73BD4B, 400);
         display: inline-block;
         float: right;
         margin-top: 5px;

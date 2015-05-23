@@ -11,7 +11,14 @@ html {
    ================= */
 body {
   font-size: 62.5%;
-  background-color: #F4F4F0; }
+  background-color: #F4F4F0;
+  box-sizing: border-box; }
+
+a {
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: underline; }
 
 /* =================
     Header Styles
@@ -94,13 +101,9 @@ nav {
   float: right; }
 
 .nav-right a {
-  text-decoration: none;
   color: #3CA5BF;
   display: inline-block;
   margin-right: 14px; }
-
-.nav-right a:hover {
-  text-decoration: underline; }
 
 .nav-right button {
   background-color: white;
@@ -136,12 +139,19 @@ section {
   margin: 0;
   margin-left: 35px; }
 
+section h5 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.4em;
+  color: #5A5555;
+  font-weight: 600;
+  margin-bottom: 10px; }
+
 section aside {
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 23.23176%;
-  margin-top: 66px;
+  margin-top: 32px;
   margin-left: 33px;
   margin-right: 0;
   padding-left: 70px; }
@@ -152,18 +162,23 @@ section aside:last-child {
 section aside ul {
   background-color: white; }
 
+section aside ul .ul-heading {
+  font-family: "Open Sans", serif;
+  font-size: 1.4em;
+  color: #5A5555;
+  font-weight: 600;
+  margin-top: 20px;
+  margin-left: -25px;
+  margin-bottom: 20px; }
+
 section aside ul li {
   list-style-type: none; }
 
 section aside ul li a {
-  font-family: "Oxygen", serif;
+  font-family: "Open Sans", serif;
   font-size: 1.3em;
   color: #3CA5BF;
-  font-weight: 400;
-  text-decoration: none; }
-
-section aside ul li a:hover {
-  text-decoration: underline; }
+  font-weight: 400; }
 
 section article {
   float: left;
@@ -175,6 +190,41 @@ section article {
 section article:last-child {
   margin-right: 0; }
 
+section article ul {
+  margin-bottom: 0; }
+
+section article ul li {
+  display: inline-block;
+  list-style-type: none; }
+
+section article ul li.left {
+  display: inline-block; }
+
+section article ul li.left a {
+  display: inline;
+  font-family: "Open Sans", serif;
+  font-size: 1.4em;
+  color: #3CA5BF;
+  font-weight: 600; }
+
+section article ul li.left h5 {
+  display: inline;
+  font-family: "Open Sans", serif;
+  font-size: 1.4em;
+  color: #5A5555;
+  font-weight: 600; }
+
+section article ul .right {
+  display: inline-block;
+  margin-left: 44%;
+  font-family: "Open Sans", serif;
+  font-size: 1.4em;
+  color: #5A5555;
+  font-weight: 600; }
+
+section article ul .right a {
+  color: #3CA5BF; }
+
 section article .listing li {
   float: left;
   display: block;
@@ -183,8 +233,8 @@ section article .listing li {
   background-color: white;
   border: 1px solid #EEEEEE;
   border-radius: 3px;
-  margin-top: 20px;
-  box-shadow: 2px 2px 2px #EEEEEE; }
+  box-shadow: 2px 2px 2px #EEEEEE;
+  position: relative; }
 
 section article .listing li:last-child {
   margin-right: 0; }
@@ -197,14 +247,10 @@ section article .listing img {
   overflow: hidden; }
 
 section article .listing p a {
-  font-family: "Oxygen", serif;
+  font-family: "Open Sans", serif;
   font-size: 1.25em;
   color: #636363;
-  font-weight: 400;
-  text-decoration: none; }
-
-section article .listing p a:hover {
-  text-decoration: underline; }
+  font-weight: 400; }
 
 section article .listing .title {
   white-space: nowrap;
@@ -225,7 +271,7 @@ section article .listing .seller a {
   color: #B2B2B0; }
 
 section article .listing .price {
-  font-family: "Oxygen", serif;
+  font-family: "Open Sans", serif;
   font-size: 1.25em;
   color: #73BD4B;
   font-weight: 400;
