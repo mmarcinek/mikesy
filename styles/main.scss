@@ -14,11 +14,19 @@ $font2: 'Oxygen';
 @mixin margin($t-margin, $r-margin, $b-margin, $l-margin) {margin-top: $t-margin; margin-right: $r-margin; margin-bottom: $b-margin; margin-left: $l-margin;}
 @mixin thingsFont($family, $serif, $size, $color, $weight) {font-family: $family, $serif; font-size: $size; color: $color; font-weight: $weight;}
 
+/* =================
+    Global Styles
+   ================= */
+
 body {
   font-size: 62.5%;
   background-color: $backgroundGr;
 
 }
+
+/* =================
+    Header Styles
+   =================*/
 
 nav {
   height: 78px;
@@ -28,6 +36,10 @@ nav {
   box-shadow: 0px 1px 1px $textDkGray;
   background-color: white;
 }
+
+/* =================
+      Nav Left
+   ================= */
 
 .nav-left{
   margin-top: -11px;
@@ -86,6 +98,10 @@ nav {
 
 }
 
+/* ==================
+       Nav Right
+   ================== */
+
 .nav-right {
   @include thingsFont($font2, serif, 1.4em, $lightBlue, 400);
   margin-top: 5px;
@@ -137,17 +153,23 @@ nav {
   }
 }
 
+/* ===================
+    Main Page Styles
+   =================== */
+
 section {
   float: clear;
   width: 100%;
   margin: 0;
   margin-left: 35px;
 
-  aside {
+
+  aside { //Side Bar Category list style
     @include span-columns(3);
     margin-top: 66px;
     margin-left: 33px;
     margin-right: 0;
+    padding-left: 70px;
 
     ul {
       background-color: white;
@@ -159,22 +181,25 @@ section {
           @include thingsFont($font2, serif, 1.3em, $lightBlue, 400);
           text-decoration: none;
         }
+
+        a:hover {
+          text-decoration: underline;
+        }
+
       }
     }
 
   }
 
-  article {
+  article { //Main listing style
     @include span-columns(9);
     margin-top: 44px;
 
 
     .listing {
-      @include thingsFont($font2, serif, 1.3em, $textDkGray, 400);
 
       li {
         @include span-columns(3);
-        // @include omega(3);
         background-color: white;
         border: 1px solid $textLtGray;
         border-radius: 3px;
@@ -186,9 +211,23 @@ section {
         }
       }
 
+      li:hover {
+
+      }
+
       img {
         width: 100%;
         overflow: hidden;
+      }
+
+      p a {
+        @include thingsFont($font2, serif, 1.25em, $textDkGray, 400);
+        text-decoration: none;
+
+      }
+
+      p a:hover {
+        text-decoration: underline;
       }
 
       .title {
@@ -198,20 +237,24 @@ section {
         overflow: hidden;
         margin-bottom: 0;
         padding-left: 5px;
+        padding-right: 5px;
       }
 
       .seller {
         display: inline-block;
         float: left;
-        color: #B2B2B0;
         margin-top: 5px;
         padding-left: 5px;
+
+        a{
+          color: #B2B2B0;
+        }
 
       }
 
       .price {
+        @include thingsFont($font2, serif, 1.25em, #73BD4B, 400);
         display: inline-block;
-        color: #73BD4B;
         float: right;
         margin-top: 5px;
         padding-right: 7px;

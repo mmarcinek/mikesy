@@ -1,10 +1,10 @@
 var itemImage, itemTitle, itemSeller, itemPrice, itemPost;
 
 stuff.results.forEach( function (item){
-    itemImage = '<img src="' + item.Images[0].url_170x135 + '">';
-    itemTitle = '<p class="title">' + item.title + '</p>';
-    itemSeller ='<p class="seller">' + item.Shop.shop_name + '</p>';
-    itemPrice ='<p class="price">' + '$' + item.price + ' ' + 'USD';
+    itemImage = '<a href="#"><img src="' + item.Images[0].url_170x135 + '"></a>';
+    itemTitle = '<p class="title"><a href="#">' + item.title + '</a></p>';
+    itemSeller ='<p class="seller"><a href="#">' + item.Shop.shop_name + '</a></p>';
+    itemPrice ='<p class="price">' + '$' + item.price + ' ' + 'USD' + '</p>';
     itemPost = '<li>' + itemImage + itemTitle + itemSeller + itemPrice + '</li>';
 
 $('.listing').append(itemPost);
@@ -14,9 +14,9 @@ $('.listing').append(itemPost);
 var sidebar = stuff.results.map (function (item){
 
   if (item.taxonomy_path !== null)
-    return item.taxonomy_path;
+    {return item.taxonomy_path;}
   else
-    return [];
+    {return [];}
 });
 
 var sidebarItems = [];
