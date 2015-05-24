@@ -400,11 +400,40 @@ section {
 
       li:hover {
         box-shadow: 1px 1px 1px #CCC;
+
+        .pop-up {
+          display: block;
+        }
       }
 
       img {
         width: 100%;
         overflow: hidden;
+        position: relative;
+      }
+
+      .pop-up {
+        position: absolute;
+        padding-right: 10px;
+        padding-top: 10px;
+        right: 0;
+        top: 0;
+        display: none;
+
+
+        .heart, .hamburger {
+          display: inline-block;
+          border-radius: 3px;
+          background-color: white;
+          width: 22px;
+          height: 22px;
+          padding: 3px;
+          box-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+        }
+
+        .heart {
+          margin-right: 5px;
+        }
       }
 
       p a {

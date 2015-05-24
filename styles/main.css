@@ -375,9 +375,33 @@ section article .listing li:last-child {
 section article .listing li:hover {
   box-shadow: 1px 1px 1px #CCC; }
 
+section article .listing li:hover .pop-up {
+  display: block; }
+
 section article .listing img {
   width: 100%;
-  overflow: hidden; }
+  overflow: hidden;
+  position: relative; }
+
+section article .listing .pop-up {
+  position: absolute;
+  padding-right: 10px;
+  padding-top: 10px;
+  right: 0;
+  top: 0;
+  display: none; }
+
+section article .listing .pop-up .heart, section article .listing .pop-up .hamburger {
+  display: inline-block;
+  border-radius: 3px;
+  background-color: white;
+  width: 22px;
+  height: 22px;
+  padding: 3px;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3); }
+
+section article .listing .pop-up .heart {
+  margin-right: 5px; }
 
 section article .listing p a {
   font-family: "Arial", serif;
