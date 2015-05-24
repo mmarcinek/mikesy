@@ -1,11 +1,13 @@
-var itemImage, itemTitle, itemSeller, itemPrice, itemPost;
+var itemImage, itemTitle, itemSeller, itemPrice, itemPost, itemFavorite;
 
 stuff.results.forEach( function (item){
     itemImage = '<a href="' + item.url + '"><img src="' + item.Images[0].url_170x135 + '"></a>';
+    itemFavorite= '<a href="#" class="pop-up">' + '<div class="heart"><img src="images/heart.png"></div>' +
+                      '<div class="hamburger"><img src="images/hamburger.png"></div>' + '</a>';
     itemTitle = '<p class="title"><a href="' + item.url + '">' + item.title + '</a></p>';
     itemSeller ='<p class="seller"><a href="' + item.Shop.url + '">' + item.Shop.shop_name + '</a></p>';
     itemPrice ='<p class="price">' + '$' + item.price + ' ' + 'USD' + '</p>';
-    itemPost = '<li>' + itemImage + itemTitle + itemSeller + itemPrice + '</li>';
+    itemPost = '<li>' + itemImage + itemFavorite + itemTitle + itemSeller + itemPrice + '</li>';
 
 $('.listing').append(itemPost);
 
