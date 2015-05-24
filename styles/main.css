@@ -84,7 +84,10 @@ nav {
 .nav-left .browse span {
   color: #bbb;
   font-size: 8px;
-  margin: 0 2px; }
+  margin: 0 3px 0 5px; }
+
+.nav-left .browse:hover {
+  border: 1px solid #bbb; }
 
 /* ==================
        Nav Right
@@ -227,6 +230,9 @@ section .refine .value {
   height: 37px;
   border-radius: 3px; }
 
+section .refine .value:hover {
+  border-color: #bbb; }
+
 section .refine .value-p {
   font-family: "Arial", sans-serif;
   font-size: 1.3em;
@@ -246,6 +252,10 @@ section .refine .load {
   border: 1px solid #EEEEEE;
   border-radius: 3px;
   background-color: white; }
+
+section .refine .load:hover {
+  background-color: #efefef;
+  border-color: #bbb; }
 
 section .refine .box {
   width: 22px;
@@ -289,6 +299,15 @@ section .refine p a {
   font-size: 1.3em;
   color: #0192B5;
   font-weight: 400; }
+
+section .refine .dropdown {
+  font-family: "Arial", sans-serif;
+  font-size: 1.3em;
+  color: #222;
+  font-weight: 400;
+  border-radius: 3px;
+  height: 37px;
+  width: 220px; }
 
 section article {
   float: left;
