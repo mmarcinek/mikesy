@@ -2,21 +2,40 @@
 @import "vendor/neat/neat";
 
 $logoOrange: #F15421;
-$lightBlue: #3CA5BF;
+$lightBlue: #0192B5;
 $lightBlueHover: #BDE6F0;
 $textDkGray: #636363;
 $textLtGray: #EEEEEE;
 $backgroundGr: #F4F4F0;
 
 $font1: 'Lora';
-$font2: 'Oxygen';
+$font2: 'Arial';
+$font3: 'Arial';
 
 @mixin margin($t-margin, $r-margin, $b-margin, $l-margin) {margin-top: $t-margin; margin-right: $r-margin; margin-bottom: $b-margin; margin-left: $l-margin;}
 @mixin thingsFont($family, $serif, $size, $color, $weight) {font-family: $family, $serif; font-size: $size; color: $color; font-weight: $weight;}
 
+/* =================
+    Global Styles
+   ================= */
+
 body {
   font-size: 62.5%;
+  background-color: $backgroundGr;
+  box-sizing: border-box;
 }
+
+a{
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* =================
+    Header Styles
+   =================*/
 
 nav {
   height: 78px;
@@ -24,7 +43,12 @@ nav {
   -webkit-box-shadow: 0px 1px 1px $textLtGray;
   -moz-box-shadow: 0px 1px 1px $textLtGray;
   box-shadow: 0px 1px 1px $textDkGray;
+  background-color: white;
 }
+
+/* =================
+      Nav Left
+   ================= */
 
 .nav-left{
   margin-top: -11px;
@@ -47,7 +71,7 @@ nav {
 
   input {
     background-color: #FBFBFA;
-    height: 2.8em;
+    height: 2.65em;
     width: 230px;
     margin-right: -3px;
     vertical-align: 1px;
@@ -70,17 +94,28 @@ nav {
     border: 1px solid $textLtGray;
     border-radius: 3px;
     margin-left: 15px;
+    padding-left: 6px;
+    padding-right: 9px;
 
-    // span {
-    //   width: 0;
-    //   height: 0;
-    //   border-style: solid;
-    //   border-width: 6px 4px 0 4px;
-    //   border-color: $textDkGray transparent transparent transparent;
-    // }
+    span {
+      color: #bbb;
+      font-size: 8px;
+      margin: 0 2px;
+
+      // content: '';
+      // width: 0;
+      // height: 0;
+      // border-style: solid;
+      // border-width: 6px 4px 0 4px;
+      // border-color: $textDkGray transparent transparent transparent;
+    }
   }
 
 }
+
+/* ==================
+       Nav Right
+   ================== */
 
 .nav-right {
   @include thingsFont($font2, serif, 1.4em, $lightBlue, 400);
@@ -90,16 +125,12 @@ nav {
   float: right;
 
   a {
-    text-decoration: none;
     color: $lightBlue;
     display: inline-block;
     margin-right: 14px;
   }
 
-  a:hover {
-    text-decoration: underline;
 
-  }
 
   button {
     background-color: white;
@@ -133,30 +164,275 @@ nav {
   }
 }
 
-.main {
-  float: clear;
-  // @include outer-container;
-  width: 100%;
-  margin: 0;
-  background-color: $backgroundGr;
-}
-
-aside {
-  @include span-columns(3);
-  float: left;
-}
+/* ===================
+    Main Page Styles
+   =================== */
 
 section {
-  @include span-columns(9);
-  float: right;
+  float: clear;
+  width: 100%;
+  margin: 0;
+  margin-left: 5%;
 
-  figure {
+  h5 {
+    @include thingsFont($font2, sans-serif, 1.4em, #5A5555, 600);
+    margin-bottom: 10px;
+  }
+
+
+  aside { //Side Bar Category list style
     @include span-columns(3);
-    height: 245px;
-    width: 240px;
-    border: 1px solid black;
+    margin-top: 32px;
+    margin-left: 33px;
+    margin-right: 0;
+    padding-left: 70px;
+
+
+    ul {
+      background-color: white;
+      border-radius: 3px;
+      box-shadow: 2px 2px 2px $textLtGray;
+
+      .ul-heading {
+          @include thingsFont($font2, serif, 1.4em, #5A5555, 600);
+          margin-top: 20px;
+          margin-left: -25px;
+          margin-bottom: 20px;
+
+      }
+
+      li {
+        list-style-type: none;
+        padding-bottom: 9px;
+
+        a {
+          @include thingsFont($font2, serif, 1.35em, $lightBlue, 400);
+        }
+      }
+
+       li:last-child {
+          padding-bottom: 15px;
+        }
+    }
+
+  }
+
+  .refine {
+    background-color: white;
+    border-radius: 3px;
+    box-shadow: 2px 2px 2px $textLtGray;
+
+    .break {
+      border-bottom: 1px solid $textLtGray;
+      @include margin(0, 15px, 0, 15px);
+      padding-bottom: 20px;
+    }
+
+    h5 {
+      @include margin( 0, 0, 5px, 0);
+      padding-top: 15px;
+    }
+
+    .fm {
+      height: 50px;
+      width: 50px;
+      vertical-align: -18px;
+      @include margin(-12px, 0, -15px, 0)
+    }
+
+    .item{
+        @include thingsFont($font2, sans-serif, 1.35em, $lightBlue, 400);
+        margin-left: -25px;
+
+    }
+    .value {
+      display: inline-block;
+      width: 73px;
+      height: 37px;
+      border-radius: 3px;
+    }
+
+    .value-p {
+      @include thingsFont($font2, sans-serif, 1.3em, $textDkGray, 400);
+      display: inline-block;
+      @include margin(0, 5px, 0, 5px)
+    }
+
+    .load {
+      width: 37px;
+      height: 37px;
+      font-size: 1.5em;
+      vertical-align: -2px;
+      border: 1px solid $textLtGray;
+      border-radius: 3px;
+      background-color: white;
+    }
+
+    .box {
+      width: 22px;
+      height: 22px;
+      border-radius: 3px;
+    }
+
+    .box1 {
+      background-color: #F40B32;
+      border: 1px solid #F40B32;
+    }
+
+    .box2 {
+      background-color: #FF7F00;
+      border: 1px solid #FF7F00;
+
+    }
+
+    .box3 {
+      background-color: #F3CC0C;
+      border: 1px solid #F3CC0C;
+
+    }
+
+    .box4 {
+      background-color: #0AC20A;
+      border: 1px solid #0AC20A;
+
+    }
+
+    .box5 {
+      background-color: #0CCCF3;
+      border: 1px solid #0CCCF3;
+
+    }
+
+    .box6 {
+      background-color: #A60CF3;
+      border: 1px solid #A60CF3;
+
+    }
+
+    .box7 {
+      background-color: #000000;
+      border: 1px solid #000000;
+
+    }
+
+    .box8 {
+      background-color: #FFFFFF;
+      border: 1px solid $textLtGray;
+
+    }
+
+    p a{
+        @include thingsFont($font2, serif, 1.3em, $lightBlue, 400);
+
+    }
+
+  }
+
+  article { //Main listing style
+    @include span-columns(9);
+    margin-top: 44px;
+
+    ul {
+      margin-bottom: 0;
+
+      li {
+        display: inline-block;
+        list-style-type: none;
+      }
+
+      li.left {
+        display: inline-block;
+
+        a {
+        display: inline;
+        @include thingsFont($font2, serif, 1.4em, $lightBlue, 600);
+        }
+
+        h5 {
+        display: inline;
+        @include thingsFont($font2, serif, 1.4em, #5A5555, 600);
+        }
+
+      }
+
+      .right {
+        display: inline-block;
+        margin-left: 42%;
+        @include thingsFont($font2, serif, 1.4em, #5A5555, 600);
+
+         a {
+          color: $lightBlue;
+        }
+      }
+
+    }
+
+    .listing {
+
+      li {
+        @include span-columns(3);
+        background-color: white;
+        border: 1px solid $textLtGray;
+        border-radius: 3px;
+        box-shadow: 2px 2px 2px $textLtGray;
+        position: relative;
+        margin-bottom: 18px;
+
+        &:last-child{
+          margin-right: 1px;
+        }
+      }
+
+      li:hover {
+        box-shadow: 1px 1px 1px #CCC;
+      }
+
+      img {
+        width: 100%;
+        overflow: hidden;
+      }
+
+      p a {
+        @include thingsFont($font2, serif, 1.25em, $textDkGray, 400);
+
+
+      }
+
+      .title {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        list-style-type: none;
+        overflow: hidden;
+        margin-bottom: 0;
+        padding-left: 5px;
+        padding-right: 5px;
+      }
+
+      .seller {
+        display: inline-block;
+        float: left;
+        margin-top: 5px;
+        padding-left: 5px;
+
+        a{
+          color: #B2B2B0;
+        }
+
+      }
+
+      .price {
+        @include thingsFont($font2, serif, 1.25em, #73BD4B, 400);
+        display: inline-block;
+        float: right;
+        margin-top: 5px;
+        padding-right: 7px;
+
+      }
+    }
   }
 }
+
+
 
 
 
