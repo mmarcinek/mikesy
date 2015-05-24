@@ -203,16 +203,16 @@ section {
 
       li {
         list-style-type: none;
-        padding-bottom: 4px;
+        padding-bottom: 5px;
 
         a {
           @include thingsFont($font3, serif, 1.3em, $lightBlue, 400);
         }
-
-        a:last-child {
-          padding-bottom: 9px;
-        }
       }
+
+       li:last-child {
+          padding-bottom: 15px;
+        }
     }
 
   }

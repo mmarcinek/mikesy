@@ -174,7 +174,7 @@ section aside ul .ul-heading {
 
 section aside ul li {
   list-style-type: none;
-  padding-bottom: 4px; }
+  padding-bottom: 5px; }
 
 section aside ul li a {
   font-family: "Open Sans", serif;
@@ -182,8 +182,8 @@ section aside ul li a {
   color: #3CA5BF;
   font-weight: 400; }
 
-section aside ul li a:last-child {
-  padding-bottom: 9px; }
+section aside ul li:last-child {
+  padding-bottom: 15px; }
 
 section article {
   float: left;
