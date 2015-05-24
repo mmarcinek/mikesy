@@ -50,7 +50,7 @@ nav {
   vertical-align: -6px; }
 
 .nav-left button {
-  font-family: "Oxygen", serif;
+  font-family: "Arial", serif;
   font-size: 1.4em;
   color: white;
   font-weight: 400;
@@ -58,15 +58,15 @@ nav {
 
 .nav-left input {
   background-color: #FBFBFA;
-  height: 2.8em;
+  height: 2.65em;
   width: 230px;
   margin-right: -3px;
   vertical-align: 1px;
   border-radius: 3px 0 0 3px; }
 
 .nav-left .search {
-  background-color: #3CA5BF;
-  border: 1px solid #3CA5BF;
+  background-color: #0192B5;
+  border: 1px solid #0192B5;
   border-radius: 0 3px 3px 0; }
 
 .nav-left .search:hover {
@@ -90,9 +90,9 @@ nav {
        Nav Right
    ================== */
 .nav-right {
-  font-family: "Oxygen", serif;
+  font-family: "Arial", serif;
   font-size: 1.4em;
-  color: #3CA5BF;
+  color: #0192B5;
   font-weight: 400;
   margin-top: 5px;
   margin-right: 13%;
@@ -100,13 +100,13 @@ nav {
   float: right; }
 
 .nav-right a {
-  color: #3CA5BF;
+  color: #0192B5;
   display: inline-block;
   margin-right: 14px; }
 
 .nav-right button {
   background-color: white;
-  border: 1px solid #3CA5BF;
+  border: 1px solid #0192B5;
   border-radius: 3px;
   display: inline-block;
   padding: 7px 10px; }
@@ -139,7 +139,7 @@ section {
   margin-left: 5%; }
 
 section h5 {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Arial", sans-serif;
   font-size: 1.4em;
   color: #5A5555;
   font-weight: 600;
@@ -164,7 +164,7 @@ section aside ul {
   box-shadow: 2px 2px 2px #EEEEEE; }
 
 section aside ul .ul-heading {
-  font-family: "Open Sans", serif;
+  font-family: "Arial", serif;
   font-size: 1.4em;
   color: #5A5555;
   font-weight: 600;
@@ -174,12 +174,12 @@ section aside ul .ul-heading {
 
 section aside ul li {
   list-style-type: none;
-  padding-bottom: 5px; }
+  padding-bottom: 9px; }
 
 section aside ul li a {
-  font-family: "Open Sans", serif;
-  font-size: 1.3em;
-  color: #3CA5BF;
+  font-family: "Arial", serif;
+  font-size: 1.35em;
+  color: #0192B5;
   font-weight: 400; }
 
 section aside ul li:last-child {
@@ -190,11 +190,19 @@ section .refine {
   border-radius: 3px;
   box-shadow: 2px 2px 2px #EEEEEE; }
 
+section .refine .break {
+  border-bottom: 1px solid #EEEEEE;
+  margin-top: 0;
+  margin-right: 15px;
+  margin-bottom: 0;
+  margin-left: 15px;
+  padding-bottom: 20px; }
+
 section .refine h5 {
   margin-top: 0;
   margin-right: 0;
   margin-bottom: 5px;
-  margin-left: 10px;
+  margin-left: 0;
   padding-top: 15px; }
 
 section .refine .fm {
@@ -204,12 +212,12 @@ section .refine .fm {
   margin-top: -12px;
   margin-right: 0;
   margin-bottom: -15px;
-  margin-left: 10px; }
+  margin-left: 0; }
 
 section .refine .item {
-  font-family: "Open Sans", sans-serif;
-  font-size: 1.4em;
-  color: #3CA5BF;
+  font-family: "Arial", sans-serif;
+  font-size: 1.35em;
+  color: #0192B5;
   font-weight: 400;
   margin-left: -25px; }
 
@@ -220,15 +228,21 @@ section .refine .value {
   border-radius: 3px; }
 
 section .refine .value-p {
-  font-family: "Open Sans", sans-serif;
-  font-size: 1.2em;
+  font-family: "Arial", sans-serif;
+  font-size: 1.3em;
   color: #636363;
   font-weight: 400;
-  display: inline-block; }
+  display: inline-block;
+  margin-top: 0;
+  margin-right: 5px;
+  margin-bottom: 0;
+  margin-left: 5px; }
 
 section .refine .load {
   width: 37px;
   height: 37px;
+  font-size: 1.5em;
+  vertical-align: -2px;
   border: 1px solid #EEEEEE;
   border-radius: 3px;
   background-color: white; }
@@ -271,9 +285,9 @@ section .refine .box8 {
   border: 1px solid #EEEEEE; }
 
 section .refine p a {
-  font-family: "Open Sans", serif;
+  font-family: "Arial", serif;
   font-size: 1.3em;
-  color: #3CA5BF;
+  color: #0192B5;
   font-weight: 400; }
 
 section article {
@@ -298,28 +312,28 @@ section article ul li.left {
 
 section article ul li.left a {
   display: inline;
-  font-family: "Open Sans", serif;
+  font-family: "Arial", serif;
   font-size: 1.4em;
-  color: #3CA5BF;
+  color: #0192B5;
   font-weight: 600; }
 
 section article ul li.left h5 {
   display: inline;
-  font-family: "Open Sans", serif;
+  font-family: "Arial", serif;
   font-size: 1.4em;
   color: #5A5555;
   font-weight: 600; }
 
 section article ul .right {
   display: inline-block;
-  margin-left: 44%;
-  font-family: "Open Sans", serif;
+  margin-left: 42%;
+  font-family: "Arial", serif;
   font-size: 1.4em;
   color: #5A5555;
   font-weight: 600; }
 
 section article ul .right a {
-  color: #3CA5BF; }
+  color: #0192B5; }
 
 section article .listing li {
   float: left;
@@ -347,7 +361,7 @@ section article .listing img {
   overflow: hidden; }
 
 section article .listing p a {
-  font-family: "Open Sans", serif;
+  font-family: "Arial", serif;
   font-size: 1.25em;
   color: #636363;
   font-weight: 400; }
@@ -371,7 +385,7 @@ section article .listing .seller a {
   color: #B2B2B0; }
 
 section article .listing .price {
-  font-family: "Open Sans", serif;
+  font-family: "Arial", serif;
   font-size: 1.25em;
   color: #73BD4B;
   font-weight: 400;

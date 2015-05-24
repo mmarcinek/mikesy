@@ -2,15 +2,15 @@
 @import "vendor/neat/neat";
 
 $logoOrange: #F15421;
-$lightBlue: #3CA5BF;
+$lightBlue: #0192B5;
 $lightBlueHover: #BDE6F0;
 $textDkGray: #636363;
 $textLtGray: #EEEEEE;
 $backgroundGr: #F4F4F0;
 
 $font1: 'Lora';
-$font2: 'Oxygen';
-$font3: 'Open Sans';
+$font2: 'Arial';
+$font3: 'Arial';
 
 @mixin margin($t-margin, $r-margin, $b-margin, $l-margin) {margin-top: $t-margin; margin-right: $r-margin; margin-bottom: $b-margin; margin-left: $l-margin;}
 @mixin thingsFont($family, $serif, $size, $color, $weight) {font-family: $family, $serif; font-size: $size; color: $color; font-weight: $weight;}
@@ -71,7 +71,7 @@ nav {
 
   input {
     background-color: #FBFBFA;
-    height: 2.8em;
+    height: 2.65em;
     width: 230px;
     margin-right: -3px;
     vertical-align: 1px;
@@ -175,7 +175,7 @@ section {
   margin-left: 5%;
 
   h5 {
-    @include thingsFont($font3, sans-serif, 1.4em, #5A5555, 600);
+    @include thingsFont($font2, sans-serif, 1.4em, #5A5555, 600);
     margin-bottom: 10px;
   }
 
@@ -194,7 +194,7 @@ section {
       box-shadow: 2px 2px 2px $textLtGray;
 
       .ul-heading {
-          @include thingsFont($font3, serif, 1.4em, #5A5555, 600);
+          @include thingsFont($font2, serif, 1.4em, #5A5555, 600);
           margin-top: 20px;
           margin-left: -25px;
           margin-bottom: 20px;
@@ -203,10 +203,10 @@ section {
 
       li {
         list-style-type: none;
-        padding-bottom: 5px;
+        padding-bottom: 9px;
 
         a {
-          @include thingsFont($font3, serif, 1.3em, $lightBlue, 400);
+          @include thingsFont($font2, serif, 1.35em, $lightBlue, 400);
         }
       }
 
@@ -222,8 +222,14 @@ section {
     border-radius: 3px;
     box-shadow: 2px 2px 2px $textLtGray;
 
+    .break {
+      border-bottom: 1px solid $textLtGray;
+      @include margin(0, 15px, 0, 15px);
+      padding-bottom: 20px;
+    }
+
     h5 {
-      @include margin( 0, 0, 5px, 10px);
+      @include margin( 0, 0, 5px, 0);
       padding-top: 15px;
     }
 
@@ -231,11 +237,11 @@ section {
       height: 50px;
       width: 50px;
       vertical-align: -18px;
-      @include margin(-12px, 0, -15px, 10px)
+      @include margin(-12px, 0, -15px, 0)
     }
 
     .item{
-        @include thingsFont($font3, sans-serif, 1.4em, $lightBlue, 400);
+        @include thingsFont($font2, sans-serif, 1.35em, $lightBlue, 400);
         margin-left: -25px;
 
     }
@@ -247,13 +253,16 @@ section {
     }
 
     .value-p {
-      @include thingsFont($font3, sans-serif, 1.2em, $textDkGray, 400);
+      @include thingsFont($font2, sans-serif, 1.3em, $textDkGray, 400);
       display: inline-block;
+      @include margin(0, 5px, 0, 5px)
     }
 
     .load {
       width: 37px;
       height: 37px;
+      font-size: 1.5em;
+      vertical-align: -2px;
       border: 1px solid $textLtGray;
       border-radius: 3px;
       background-color: white;
@@ -313,7 +322,7 @@ section {
     }
 
     p a{
-        @include thingsFont($font3, serif, 1.3em, $lightBlue, 400);
+        @include thingsFont($font2, serif, 1.3em, $lightBlue, 400);
 
     }
 
@@ -336,20 +345,20 @@ section {
 
         a {
         display: inline;
-        @include thingsFont($font3, serif, 1.4em, $lightBlue, 600);
+        @include thingsFont($font2, serif, 1.4em, $lightBlue, 600);
         }
 
         h5 {
         display: inline;
-        @include thingsFont($font3, serif, 1.4em, #5A5555, 600);
+        @include thingsFont($font2, serif, 1.4em, #5A5555, 600);
         }
 
       }
 
       .right {
         display: inline-block;
-        margin-left: 44%;
-        @include thingsFont($font3, serif, 1.4em, #5A5555, 600);
+        margin-left: 42%;
+        @include thingsFont($font2, serif, 1.4em, #5A5555, 600);
 
          a {
           color: $lightBlue;
@@ -384,7 +393,7 @@ section {
       }
 
       p a {
-        @include thingsFont($font3, serif, 1.25em, $textDkGray, 400);
+        @include thingsFont($font2, serif, 1.25em, $textDkGray, 400);
 
 
       }
@@ -412,7 +421,7 @@ section {
       }
 
       .price {
-        @include thingsFont($font3, serif, 1.25em, #73BD4B, 400);
+        @include thingsFont($font2, serif, 1.25em, #73BD4B, 400);
         display: inline-block;
         float: right;
         margin-top: 5px;
