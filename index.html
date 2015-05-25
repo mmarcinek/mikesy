@@ -46,9 +46,9 @@
       <div class="refine">
         <div class="break">
           <h5>Item Type</h5>
-            <input type="radio" class="fm"><span class="item">All Items</span><br>
-            <input type="radio" class="fm"><span class="item">Handmade</span><br>
-            <input type="radio" class="fm"><span class="item">Vintage</span><br>
+            <input type="radio" class="fm1" checked><label class="item">All Items</label> <br>
+            <input type="radio" class="fm1"><label class="item">Handmade</label><br>
+            <input type="radio" class="fm1"><label class="item">Vintage</label><br>
         </div>
         <div class="break">
           <h5>Price</h5>
@@ -70,13 +70,13 @@
         </div>
         <div class="break">
           <h5>Ordering Options</h5>
-            <input type="checkbox" class="fm"><span class="item">Accepts Etsy Gift Cards</span><br>
-            <input type="checkbox" class="fm"><span class="item">Customizable</span><br>
+            <input type="checkbox" class="fm2" checked="checked"><label class="item">Accepts Etsy Gift Cards</label><br>
+            <input type="checkbox" class="fm2"><label class="item">Customizable</label><br>
         </div>
         <div class="break">
           <h5>Shop Location</h5>
-            <input type="radio" class="fm"><span class="item">Anywhere</span><br>
-            <input type="radio" class="fm"><span class="item">United States</span><br>
+            <input type="radio" class="fm3" checked="checked"><label class="item">Anywhere</label><br>
+            <input type="radio" class="fm3"><label class="item">United States</label><br>
             <p><a href="#">Choose a custom location</a></p>
         </div>
         <div class="break">
@@ -120,8 +120,8 @@
 
     <article>
       <ul>
-        <li class="left"><a href="$">All categories</a><h5> > "whiskey" ()</h5></li>
-        <li class="right">Sort by: <a href="">Relevancy</a></li>
+        <li class="left"><a href="$">All categories</a><h5 class="criteria"> ></h5></li>
+        <li class="right">Sort by: <a href="#">Relevancy<span class="down">&#9660;</span></a></li>
       </ul>
       <ul class="listing">
       </ul>
@@ -133,7 +133,10 @@
 
 
   <script src="scripts/vendor/jquery.min.js"></script>
-  <script src="scripts/items.js"></script>
+  <!-- switch by changing commented script tag to swap out page data -->
+  <!-- <script src="scripts/items.js"></script> -->
+  <!-- <script src="scripts/cooking.js"></script> -->
+  <script src="scripts/other.js"></script>
   <script src="scripts/main.js"></script>
 
 </body>

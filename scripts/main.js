@@ -38,5 +38,19 @@ sidebarItems.forEach ( function (sbItem){
 });
 
 
+var allCategories = $('.criteria');
+
+allCategories = ' ' + '\x22' + stuff.search + '\x22' + '<span>' + ' (' + stuff.count + ' results' + ')' + '</span>';
+
+$('.criteria').append(allCategories);
+
+
+
+
+// $('.fm1').on('click', function(){
+//   $('.fm1').removeId('.fm1-check');
+//   $(this).addId('.fm1-checked');
+// });
+
 
 

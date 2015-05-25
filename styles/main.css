@@ -11,7 +11,7 @@ html {
    ================= */
 body {
   font-size: 62.5%;
-  background-color: #F4F4F0;
+  background-color: #F5F5F1;
   box-sizing: border-box; }
 
 a {
@@ -125,7 +125,8 @@ nav {
   margin-left: 13px; }
 
 .nav-right figure img {
-  width: 23px; }
+  width: 23px;
+  color: #636363; }
 
 .nav-right figure figcaption {
   color: #636363;
@@ -204,25 +205,30 @@ section .refine .break {
 section .refine h5 {
   margin-top: 0;
   margin-right: 0;
-  margin-bottom: 5px;
+  margin-bottom: 7px;
   margin-left: 0;
   padding-top: 15px; }
 
-section .refine .fm {
-  height: 50px;
-  width: 50px;
-  vertical-align: -18px;
-  margin-top: -12px;
+section .refine .fm1, section .refine .fm2, section .refine .fm3 {
+  height: 2em;
+  width: 2em;
+  margin-top: 0;
   margin-right: 0;
-  margin-bottom: -15px;
-  margin-left: 0; }
+  margin-bottom: 5px;
+  margin-left: 0;
+  display: inline-block; }
 
 section .refine .item {
   font-family: "Arial", sans-serif;
   font-size: 1.35em;
   color: #0192B5;
   font-weight: 400;
-  margin-left: -25px; }
+  margin-left: 5px;
+  display: inline-block;
+  vertical-align: 5px; }
+
+section .refine .item:hover {
+  text-decoration: underline; }
 
 section .refine .value {
   display: inline-block;
@@ -343,9 +349,12 @@ section article ul li.left h5 {
   color: #5A5555;
   font-weight: 600; }
 
+section article ul li.left h5 span {
+  font-weight: 300; }
+
 section article ul .right {
   display: inline-block;
-  margin-left: 42%;
+  margin-left: 38.5%;
   font-family: "Arial", serif;
   font-size: 1.4em;
   color: #5A5555;
@@ -353,6 +362,12 @@ section article ul .right {
 
 section article ul .right a {
   color: #0192B5; }
+
+section article ul .right a span {
+  color: #bbb;
+  font-size: 9px;
+  vertical-align: 1px;
+  margin-left: 1px; }
 
 section article .listing li {
   float: left;

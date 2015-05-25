@@ -6,7 +6,7 @@ $lightBlue: #0192B5;
 $lightBlueHover: #BDE6F0;
 $textDkGray: #636363;
 $textLtGray: #EEEEEE;
-$backgroundGr: #F4F4F0;
+$backgroundGr: #F5F5F1;
 
 $font1: 'Lora';
 $font2: 'Arial';
@@ -153,6 +153,7 @@ nav {
 
     img {
       width: 23px;
+      color: $textDkGray;
     }
 
     figcaption {
@@ -228,22 +229,29 @@ section {
     }
 
     h5 {
-      @include margin( 0, 0, 5px, 0);
+      @include margin( 0, 0, 7px, 0);
       padding-top: 15px;
     }
 
-    .fm {
-      height: 50px;
-      width: 50px;
-      vertical-align: -18px;
-      @include margin(-12px, 0, -15px, 0)
+    .fm1, .fm2, .fm3 {
+      height: 2em;
+      width: 2em;
+      @include margin(0, 0, 5px, 0);
+      display: inline-block;
     }
 
     .item{
         @include thingsFont($font2, sans-serif, 1.35em, $lightBlue, 400);
-        margin-left: -25px;
+        margin-left: 5px;
+        display: inline-block;
+        vertical-align: 5px;
 
     }
+
+    .item:hover {
+      text-decoration: underline;
+    }
+
     .value {
       display: inline-block;
       width: 73px;
@@ -366,17 +374,28 @@ section {
         h5 {
         display: inline;
         @include thingsFont($font2, serif, 1.4em, #5A5555, 600);
+
+          span {
+            font-weight: 300;
+          }
         }
 
       }
 
       .right {
         display: inline-block;
-        margin-left: 42%;
+        margin-left: 38.5%;
         @include thingsFont($font2, serif, 1.4em, #5A5555, 600);
 
          a {
           color: $lightBlue;
+
+          span {
+            color: #bbb;
+            font-size: 9px;
+            vertical-align: 1px;
+            margin-left: 1px;
+          }
         }
       }
 
