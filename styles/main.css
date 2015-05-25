@@ -349,6 +349,9 @@ section article ul li.left h5 {
   color: #5A5555;
   font-weight: 600; }
 
+section article ul li.left h5 span {
+  font-weight: 300; }
+
 section article ul .right {
   display: inline-block;
   margin-left: 38.5%;

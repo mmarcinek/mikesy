@@ -374,6 +374,10 @@ section {
         h5 {
         display: inline;
         @include thingsFont($font2, serif, 1.4em, #5A5555, 600);
+
+          span {
+            font-weight: 300;
+          }
         }
 
       }
