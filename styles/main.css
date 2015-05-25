@@ -204,25 +204,30 @@ section .refine .break {
 section .refine h5 {
   margin-top: 0;
   margin-right: 0;
-  margin-bottom: 5px;
+  margin-bottom: 7px;
   margin-left: 0;
   padding-top: 15px; }
 
 section .refine .fm {
-  height: 50px;
-  width: 50px;
-  vertical-align: -18px;
-  margin-top: -12px;
+  height: 2em;
+  width: 2em;
+  margin-top: 0;
   margin-right: 0;
-  margin-bottom: -15px;
-  margin-left: 0; }
+  margin-bottom: 5px;
+  margin-left: 0;
+  display: inline-block; }
 
 section .refine .item {
   font-family: "Arial", sans-serif;
   font-size: 1.35em;
   color: #0192B5;
   font-weight: 400;
-  margin-left: -25px; }
+  margin-left: 5px;
+  display: inline-block;
+  vertical-align: 5px; }
+
+section .refine .item:hover {
+  text-decoration: underline; }
 
 section .refine .value {
   display: inline-block;

@@ -228,22 +228,30 @@ section {
     }
 
     h5 {
-      @include margin( 0, 0, 5px, 0);
+      @include margin( 0, 0, 7px, 0);
       padding-top: 15px;
     }
 
     .fm {
-      height: 50px;
-      width: 50px;
-      vertical-align: -18px;
-      @include margin(-12px, 0, -15px, 0)
+      height: 2em;
+      width: 2em;
+      @include margin(0, 0, 5px, 0);
+      display: inline-block;
+
     }
 
     .item{
         @include thingsFont($font2, sans-serif, 1.35em, $lightBlue, 400);
-        margin-left: -25px;
+        margin-left: 5px;
+        display: inline-block;
+        vertical-align: 5px;
 
     }
+
+    .item:hover {
+      text-decoration: underline;
+    }
+
     .value {
       display: inline-block;
       width: 73px;
