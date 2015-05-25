@@ -6,7 +6,7 @@ $lightBlue: #0192B5;
 $lightBlueHover: #BDE6F0;
 $textDkGray: #636363;
 $textLtGray: #EEEEEE;
-$backgroundGr: #F4F4F0;
+$backgroundGr: #F5F5F1;
 
 $font1: 'Lora';
 $font2: 'Arial';
@@ -153,6 +153,7 @@ nav {
 
     img {
       width: 23px;
+      color: $textDkGray;
     }
 
     figcaption {
@@ -232,12 +233,11 @@ section {
       padding-top: 15px;
     }
 
-    .fm {
+    .fm1, .fm2, .fm3 {
       height: 2em;
       width: 2em;
       @include margin(0, 0, 5px, 0);
       display: inline-block;
-
     }
 
     .item{
@@ -380,11 +380,18 @@ section {
 
       .right {
         display: inline-block;
-        margin-left: 42%;
+        margin-left: 38.5%;
         @include thingsFont($font2, serif, 1.4em, #5A5555, 600);
 
          a {
           color: $lightBlue;
+
+          span {
+            color: #bbb;
+            font-size: 9px;
+            vertical-align: 1px;
+            margin-left: 1px;
+          }
         }
       }
 

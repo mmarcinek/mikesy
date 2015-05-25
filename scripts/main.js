@@ -38,5 +38,10 @@ sidebarItems.forEach ( function (sbItem){
 });
 
 
+// $('.fm1').on('click', function(){
+//   $('.fm1').removeId('.fm1-check');
+//   $(this).addId('.fm1-checked');
+// });
+
 
 

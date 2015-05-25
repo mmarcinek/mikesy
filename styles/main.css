@@ -11,7 +11,7 @@ html {
    ================= */
 body {
   font-size: 62.5%;
-  background-color: #F4F4F0;
+  background-color: #F5F5F1;
   box-sizing: border-box; }
 
 a {
@@ -125,7 +125,8 @@ nav {
   margin-left: 13px; }
 
 .nav-right figure img {
-  width: 23px; }
+  width: 23px;
+  color: #636363; }
 
 .nav-right figure figcaption {
   color: #636363;
@@ -208,7 +209,7 @@ section .refine h5 {
   margin-left: 0;
   padding-top: 15px; }
 
-section .refine .fm {
+section .refine .fm1, section .refine .fm2, section .refine .fm3 {
   height: 2em;
   width: 2em;
   margin-top: 0;
@@ -350,7 +351,7 @@ section article ul li.left h5 {
 
 section article ul .right {
   display: inline-block;
-  margin-left: 42%;
+  margin-left: 38.5%;
   font-family: "Arial", serif;
   font-size: 1.4em;
   color: #5A5555;
@@ -358,6 +359,12 @@ section article ul .right {
 
 section article ul .right a {
   color: #0192B5; }
+
+section article ul .right a span {
+  color: #bbb;
+  font-size: 9px;
+  vertical-align: 1px;
+  margin-left: 1px; }
 
 section article .listing li {
   float: left;
